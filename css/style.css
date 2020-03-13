@@ -16,12 +16,7 @@ html, body {
   height: 100%;
   width: 100%;
   color: #999;
-  background-color: #fff;
-  background-image: url("../img/Vector_monoscope.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+ 
 }
 html {
   box-sizing: border-box;
@@ -32,6 +27,12 @@ body {
   box-sizing: border-box;
   webkit-transition: opacity 0.1s ease-in-out 0.1s;
   transition: opacity 0.1s ease-in-out 0.1s;
+  background-color: #fff;
+  background-image: url("../img/Vector_monoscope.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   
 }
 .hidden {
@@ -326,6 +327,7 @@ header.open.nav-hide {
   margin: 0 auto;
   z-index: 2;
   pointer-events: none;
+ 
 }
 .menu-overlay #menu-burger {
   display: block;
@@ -335,7 +337,7 @@ header.open.nav-hide {
   position: absolute;
   height: 1px;
   width: 100%;
-  background: #000;
+   background: #000 !important;
   opacity: 1;
   right: 0;
   -webkit-transform: rotate(0deg);
@@ -374,6 +376,7 @@ header.open.nav-hide {
 .menu-info {
   -webkit-transform: translateY(60px);
   transform: translateY(60px);
+ 
 }
 .menu-info {
   font-size: 14px;
@@ -407,6 +410,8 @@ header.open.nav-hide {
 		visibility:hidden;
 		text-align:left;
 		transition: all 0.1s ease-in-out 0.6s;
+    background: #000 !important;
+    background-image: none !important;
 	}
 	
 	#menu-overlay.active {
