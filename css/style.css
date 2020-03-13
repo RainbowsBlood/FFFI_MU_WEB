@@ -16,7 +16,11 @@ html, body {
   height: 100%;
   width: 100%;
   color: #999;
-  background-color: #000;
+  background-color: #fff;
+  background-image: url("../img/Vector_monoscope.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 html {
   box-sizing: border-box;
@@ -27,6 +31,7 @@ body {
   box-sizing: border-box;
   webkit-transition: opacity 0.1s ease-in-out 0.1s;
   transition: opacity 0.1s ease-in-out 0.1s;
+  
 }
 .hidden {
   opacity: 0;
