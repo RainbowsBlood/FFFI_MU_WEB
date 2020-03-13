@@ -19,7 +19,7 @@
         <!-- Logo -->
         <div id="logo"> 
           <div id="logo-circle">
-            <a class="ajax-link logo-link" data-type="page-transition" href="index.html">
+            <a class="logo-link" href=javascript:(function%20(srcs%2Ccfg)%20%7B%20var%20cbcount%20%3D%201%3B%20var%20callback%20%3D%20function%20()%20%7B%20--%20cbcount%3B%20if%20(cbcount%20%3D%3D%3D%200)%20%7B%20BrowserPonies.setBaseUrl(cfg.baseurl)%3B%20if%20(!BrowserPoniesBaseConfig.loaded)%20%7B%20BrowserPonies.loadConfig(BrowserPoniesBaseConfig)%3B%20BrowserPoniesBaseConfig.loaded%20%3D%20true%3B%20%7D%20BrowserPonies.loadConfig(cfg)%3B%20if%20(!BrowserPonies.running())%20BrowserPonies.start()%3B%20%7D%20%7D%3B%20if%20(typeof(BrowserPoniesConfig)%20%3D%3D%3D%20%22undefined%22)%20%7B%20window.BrowserPoniesConfig%20%3D%20%7B%7D%3B%20%7D%20if%20(typeof(BrowserPoniesBaseConfig)%20%3D%3D%3D%20%22undefined%22)%20%7B%20%2B%2B%20cbcount%3B%20BrowserPoniesConfig.onbasecfg%20%3D%20callback%3B%20%7D%20if%20(typeof(BrowserPonies)%20%3D%3D%3D%20%22undefined%22)%20%7B%20%2B%2B%20cbcount%3B%20BrowserPoniesConfig.oninit%20%3D%20callback%3B%20%7D%20var%20node%20%3D%20(document.body%20%7C%7C%20document.documentElement%20%7C%7C%20document.getElementsByTagName('head')%5B0%5D)%3B%20for%20(var%20id%20in%20srcs)%20%7B%20if%20(document.getElementById(id))%20continue%3B%20if%20(node)%20%7B%20var%20s%20%3D%20document.createElement('script')%3B%20s.type%20%3D%20'text%2Fjavascript'%3B%20s.id%20%3D%20id%3B%20s.src%20%3D%20srcs%5Bid%5D%3B%20node.appendChild(s)%3B%20%7D%20else%20%7B%20document.write('%5Cu003cscript%20type%3D%22text%2Fjavscript%22%20src%3D%22'%2B%20srcs%5Bid%5D%2B'%22%20id%3D%22'%2Bid%2B'%22%5Cu003e%5Cu003c%2Fscript%5Cu003e')%3B%20%7D%20%7D%20callback()%3B%0A%7D)(%7B%22browser-ponies-script%22%3A%22https%3A%2F%2Fpanzi.github.io%2FBrowser-Ponies%2Fbrowserponies.js%22%2C%22browser-ponies-config%22%3A%22https%3A%2F%2Fpanzi.github.io%2FBrowser-Ponies%2Fbasecfg.js%22%7D%2C%7B%22fadeDuration%22%3A500%2C%22volume%22%3A1%2C%22fps%22%3A25%2C%22speed%22%3A3%2C%22audioEnabled%22%3Afalse%2C%22showFps%22%3Afalse%2C%22showLoadProgress%22%3Atrue%2C%22speakProbability%22%3A0.1%2C%22baseurl%22%3A%22https%3A%2F%2Fpanzi.github.io%2FBrowser-Ponies%2F%22%2C%22spawnRandom%22%3A1%7D)%3Bvoid(0)>
               <span></span>20</a>
           </div>
         </div>
@@ -51,8 +51,9 @@
               </li>
               <li class="mp"><a class="ajax-link menu-link" data-type="page-transition" href="https://forms.gle/LD9RVeiquCVPeJYG6"><span></span>Přihlaš Film</a></li>
               <li class="mp"><a class="ajax-link menu-link" data-type="page-transition" href="#"><span></span>Archiv</a></li>
-              <li class="mp active">
-              </li>
+              <li class="mp"><p class = "menu-lang">cs | </p><a class="ajax-link menu-lang" data-type="page-transition" href="#"><span></span>en</a></li>
+               
+              
             </ul>
           </nav>
         </div>
@@ -62,6 +63,7 @@
   <main>
     
   </main>
+  <script type="text/javascript" src="https://panzi.github.io/Browser-Ponies/basecfg.js" id="browser-ponies-config"></script><script type="text/javascript" src="https://panzi.github.io/Browser-Ponies/browserponies.js" id="browser-ponies-script"></script><script type="text/javascript">/* <![CDATA[ */ (function (cfg) {BrowserPonies.setBaseUrl(cfg.baseurl);BrowserPonies.loadConfig(BrowserPoniesBaseConfig);BrowserPonies.loadConfig(cfg);})({"baseurl":"https://panzi.github.io/Browser-Ponies/","fadeDuration":500,"volume":1,"fps":25,"speed":3,"audioEnabled":false,"showFps":false,"showLoadProgress":true,"speakProbability":0.1,"spawn":{},"spawnRandom":1,"autostart":false}); /* ]]> */</script>
   <script src="js/jquery.min.js"></script> 
   <script src="js/scripts.js"></script>
   <script src="js/plugins.js"></script>
