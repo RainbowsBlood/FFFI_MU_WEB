@@ -21,6 +21,7 @@ html, body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 html {
   box-sizing: border-box;
